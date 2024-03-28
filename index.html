@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full View Background Image with Address Link</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .background-image {
+            position: fixed; /* Use absolute for scrollable content */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the image is fully visible */
+            object-position: center; /* Centers the image */
+        }
+        .content {
+            position: relative;
+            z-index: 2; /* Ensures content is above the image */
+            color: white;
+            text-align: center;
+            top: 50%; /* Center the content vertically */
+            transform: translateY(-50%);
+        }
+        .address-link {
+            color: #FFF; /* White text color for visibility */
+            text-decoration: underline; /* Underline to indicate it's clickable */
+            margin-top: 20px; /* Some space from the text above */
+            display: block; /* Make it a block to center text */
+        }
+        .content
+        {
+            margin-top: 190px;
+        }
+        .content a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<img src="img/Inv.png" class="background-image" alt="Background Image">
+
+<div class="content">
+    <a href="https://maps.app.goo.gl/jvjjoYdPj2C8Gr9dA" target="_blank" class="address-link">आमच्या लग्नाच्या स्थळासाठी येथे क्लिक करा </a>
+</div>
+
+</body>
+</html>
